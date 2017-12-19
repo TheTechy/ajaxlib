@@ -28,37 +28,37 @@ Some usage examples:
 ```html
 // Examples
 // All options
-	ajaxLib.execute({
-		success: function(successVal) {
-			alert('AJAX success: ' + successVal);
-		}),
-		error: function(errorVal) {
-			alert('AJAX error' + errorVal);
-		},
-		url: 'http://127.0.0.1/getPersonData.php',
-		method: 'GET',
-		async: true,
-		dataSent: 'JSON',
-		dataReceived: 'JSON',
-		headers: {
-			"Content-Type": "application/json"
-		},
-		parameters: {
-			firstname: 'John',
-			surname: 'Smith',
-			idNumber: 'A136253'
-		}
-	});
+ajaxLib.execute({
+	success: function(successVal) {
+		alert('AJAX success: ' + successVal);
+	}),
+	error: function(errorVal) {
+		alert('AJAX error' + errorVal);
+	},
+	url: 'http://127.0.0.1/getPersonData.php',
+	method: 'GET',
+	async: true,
+	dataSent: 'JSON',
+	dataReceived: 'JSON',
+	headers: {
+		"Content-Type": "application/json"
+	},
+	parameters: {
+		firstname: 'John',
+		surname: 'Smith',
+		idNumber: 'A136253'
+	}
+});
 
-	// Minimal options
-	ajaxLib.execute({
-		success: function(successVal) {
-			alert('AJAX success: ' + successVal);
-		},
-		error: function(errorVal) {
-			alert('AJAX error' + errorVal);
-		},
-		url: 'https://httpbin.org/uuid',
-		dataReceived: 'JSON'
-	});
+// Minimal options
+ajaxLib.execute({
+	success: function(successVal) {
+		alert('AJAX success: ' + successVal);
+	},
+	error: function(errorVal) {
+		alert('AJAX error' + errorVal);
+	},
+	url: 'https://httpbin.org/uuid',
+	dataReceived: 'JSON'
+});
 ```
